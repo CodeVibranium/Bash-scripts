@@ -19,3 +19,8 @@ A voyage of my BASH learning experience
 
 - It helps to determine if the script has been executed successfully.
 - To retrieve the exit code of command use `$?`
+
+## Run the script
+
+- add the executable permissions to the script using `chmod`.
+- execute the script file using `./script-name.sh`
