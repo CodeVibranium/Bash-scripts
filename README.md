@@ -24,3 +24,20 @@ A voyage of my BASH learning experience
 
 - add the executable permissions to the script using `chmod`.
 - execute the script file using `./script-name.sh`
+
+## Access script across system
+
+- System path: Tells the linux cli to search for executable files given as commands
+- ```sh
+  echo "$PATH"
+  ```
+- When a command is given to execute, the shell looks for that command in the `$PATH` of the system, **Command name === File name**
+- Steps
+  1. Find location of executable script.
+  2. Give script executable permissions.
+  3. Goto shell specific configuration file (`.zshrc`)
+  4. Overwite the PATH variable
+  5. `export PATH="$PATH:$HOME/Bash-scripts:$PATH"`
+  6. Re-run the configuration file `source ~/.zshrc`
+
+## What will happen if the $PATH contains multiple executable files with same name at differnt paths
