@@ -40,4 +40,15 @@ A voyage of my BASH learning experience
   5. `export PATH="$PATH:$HOME/Bash-scripts:$PATH"`
   6. Re-run the configuration file `source ~/.zshrc`
 
-## What will happen if the $PATH contains multiple executable files with same name at differnt paths
+#### What will happen if the $PATH contains multiple executable files with same name at differnt paths
+
+## Change shell process
+
+1. Find shell `echo $SHELL`
+2. Find bash `which bash`
+3. Update bash `brew install bash`
+4. If shell is not bash `create .bashrc`
+5. add `eval "$(/opt/homebrew/bin/brew shellenv)"`
+6. `source ~/.bashrc`
+7. `bash --version`
+8. `chsh -s /bin/bash`
